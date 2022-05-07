@@ -1,0 +1,38 @@
+h1{
+  text-decoration-color: green
+}
+
+.main-headings>h1{
+  text-align: center;
+}
+
+.main-headings>h2{
+  text-align: center;
+
+}
+
+.main-headings>h3{
+  text-align: center;
+
+}
+
+.links>div>a{
+  text-decoration: none;
+  background-color: ForestGreen;
+  color: black;
+  padding: .5% 2%;
+  border-radius: 5px;
+}
+
+.links>div>a:hover{
+  background-color: green;
+}
+
+.links>div{
+  display: inline;
+  margin-right: 2%;
+}
+
+.links{
+  bottom: 0;
+}
