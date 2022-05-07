@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faTwitter, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -20,6 +20,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppModule {
   constructor(library: FaIconLibrary){
-    library.addIconPacks(fas);
+    library.addIcons(faTwitter);
+    library.addIcons(faTiktok);
   }
  }
