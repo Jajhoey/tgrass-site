@@ -1,7 +1,11 @@
 <style>
 </style>
 
-<div class="main-headings">
+<nav-bar></nav-bar>
+
+
+<div [hidden]="this.router.url !== '/'" class="main-headings">
+
   <h1>TGrass</h1>
 
   <h2>Content Creator</h2>
@@ -10,29 +14,22 @@
   <h3>Tournament Organizer for Fighting Games</h3>
 </div>
 
-
 <div class="links">
-  <div>
-    <a class="fa fa-twitter" href="https://www.youtube.com/channel/UCf_bdmftV3qWggWkAdlk_BQ">Youtube</a>
-  </div>
-
-  <fa-icon icon="twitter"></fa-icon>
-  <fa-icon [icon]="['fab', 'twitter']"></fa-icon>
-
-
-
-  <div>
-    <a class="fa fa-twitter" href="https://www.tiktok.com/@tgrass715?lang=en">Tiktok</a>
-  </div>
-  <div>
-    <a class="fa fa-twitter" href="https://twitter.com/tGrass715">Twitter</a>
-  </div>
-  <div>
-    <a class="fa fa-twitter" href="https://discord.gg/HAE2aXDyJx">Discord</a>
-  </div>
-  <div>
-    <a class="fa fa-twitter" href="https://www.twitch.tv/tgrass">Twitch</a>
-  </div>
+  <a href="https://www.youtube.com/channel/UCf_bdmftV3qWggWkAdlk_BQ">
+    <fa-icon class="social-link" size="3x" [icon]="['fab', 'youtube']"></fa-icon>
+  </a>
+  <a href="https://www.tiktok.com/@tgrass715?lang=en">
+    <fa-icon class="social-link" size="3x" [icon]="['fab', 'tiktok']"></fa-icon>
+  </a>
+  <a href="https://twitter.com/tGrass715">
+    <fa-icon class="social-link" size="3x" [icon]="['fab', 'twitter']"></fa-icon>
+  </a>
+  <a href="https://discord.gg/HAE2aXDyJx">
+    <fa-icon class="social-link" size="3x" [icon]="['fab', 'discord']"></fa-icon>
+  </a>
+  <a href="https://www.twitch.tv/tgrass">
+    <fa-icon class="social-link" size="3x" [icon]="['fab', 'twitch']"></fa-icon>
+  </a>
 </div>
 
 <router-outlet></router-outlet>
